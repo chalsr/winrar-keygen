@@ -374,14 +374,24 @@
 
   * You can open the project by VS2015 IDE and then build it with one click. Or use VS Developer Command Prompt: 
     ```cmd
-    msbuild winrar-keygen.vcxproj /p:Configuration=Release;Platform=<x86|x64>;OutputPath=<your_output_dir> /t:build
+    msbuild winrar-keygen.vcxproj /p:Configuration=Release;Platform=<x86|x64>;SolutionDir=<your_output_dir> /t:build
     ```
 
   * __NOTICE: Do not use "Debug" configuration. Otherwise you may approximately wait for half a minute every time you generate a license file.__
 
+  * __NOTICE: SolutionDir must end with `\`__
+
+  * __NOTICE:__
+    
+    __For Windows XP, you can build it by__
+
+    ```cmd
+    msbuild winrar-keygen.vcxproj /p:Configuration=ForXP;Platform=x86;SolutionDir=<your_output_dir> /t:build
+    ```
+
 ## 4. Example
   ```cmd
-  D:\Github\winrar-keygen>msbuild winrar-keygen.vcxproj /p:Configuration=Release;Platform=x64;OutDir=D:\winrar-keygen\ /t:build
+  D:\Github\winrar-keygen>msbuild winrar-keygen.vcxproj /p:Configuration=Release;Platform=x64;SolutionDir=D:\winrar-keygen\ /t:build
       ......
       ......
 
