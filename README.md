@@ -395,7 +395,7 @@
       ......
       ......
 
-  D:\Github\winrar-keygen>cd D:\winrar-keygen
+  D:\Github\winrar-keygen>cd D:\winrar-keygen\x64\Release
 
   D:\winrar-keygen>winrar-keygen.exe "Phantom" "Single PC License" >> rarreg.key
 
